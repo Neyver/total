@@ -1,0 +1,77 @@
+extends ../layout.jade
+block contenido
+      .container
+        .page-header
+          h1.all-tittles
+            | Sistema Examenes en Linea 
+            small Inicio
+      section.full-reset.text-center(style='padding: 40px 0;')
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-face
+          .tile-name.all-tittles administradores
+          .tile-num.full-reset 7
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-accounts
+          .tile-name.all-tittles estudiantes
+          .tile-num.full-reset 70
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-male-alt
+          .tile-name.all-tittles docentes
+          .tile-num.full-reset 11
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-male-female
+          .tile-name.all-tittles(style='width: 90%;') personal de Comite
+          .tile-num.full-reset 17
+        
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-bookmark-outline
+          .tile-name.all-tittles categorías
+          .tile-num.full-reset 11
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-assignment-account
+          .tile-name.all-tittles(style='width: 90%;') secciones de examenes dados
+          .tile-num.full-reset 17
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-timer
+          .tile-name.all-tittles(style='width: 90%;') Lista de examenes
+          .tile-num.full-reset 10
+        article.tile
+          .tile-icon.full-reset
+            i.zmdi.zmdi-trending-up
+          .tile-name.all-tittles(style='width: 90%;') reportes y estadísticas
+          .tile-num.full-reset  
+      #ModalHelp.modal.fade(tabindex='-1', role='dialog')
+        .modal-dialog.modal-lg
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+              h4.modal-title.text-center.all-tittles ayuda del sistema
+            .modal-body
+              | Este es un sistema para la materia de web
+            .modal-footer
+              button.btn.btn-primary(type='button', data-dismiss='modal')
+                i.zmdi.zmdi-thumb-up
+                |    De acuerdo
+      footer.footer.full-reset
+        .container-fluid
+          .row
+            .col-xs-12.col-sm-6
+              
+            .col-xs-12.col-sm-6
+              h4.all-tittles Desarrollador
+              ul.list-unstyled
+                li
+                  i.zmdi.zmdi-check.zmdi-hc-fw
+                  |   dinamitaweb
+                  i.zmdi.zmdi-facebook.zmdi-hc-fw.footer-social
+                  i.zmdi.zmdi-twitter.zmdi-hc-fw.footer-social
+        .footer-copyright.full-reset.all-tittles © 2017 DINAMITAWEB
+  
